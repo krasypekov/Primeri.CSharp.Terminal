@@ -14,7 +14,20 @@ namespace ReadFromCommandLine
 			b = Convert.ToInt32 (Console.ReadLine () );
 
 			//Печатане на резултат
-			Console.WriteLine ( "Резултатът а + b е " + ( a + b ).ToString () + "\n\n\n");
+			Console.WriteLine ( "Резултатът a + b е " + ( a + b ).ToString () + "\n\n\n");
+
+			string test = "1";
+			test += ", 2";
+			test += ", 100";
+			test += ", 4";
+			test += ", 5";
+
+			Console.WriteLine ("Събиране с += :" + test + "\n");
+
+			test = test.Replace (", ", ";");
+			Console.WriteLine ("Работа с Replace:" + test + "\n");
+
+			Console.WriteLine ("3-ти знак: " + test.Split(';') [2] );
 		}
 	
 	}

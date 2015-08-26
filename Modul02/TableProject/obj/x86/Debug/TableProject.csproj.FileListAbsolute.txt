@@ -1,0 +1,4 @@
+E:\aula\primeri.csharp.terminal\Modul02\TableProject\bin\Debug\TableProject.exe
+E:\aula\primeri.csharp.terminal\Modul02\TableProject\bin\Debug\TableProject.pdb
+E:\aula\primeri.csharp.terminal\Modul02\TableProject\obj\x86\Debug\TableProject.exe
+E:\aula\primeri.csharp.terminal\Modul02\TableProject\obj\x86\Debug\TableProject.pdb

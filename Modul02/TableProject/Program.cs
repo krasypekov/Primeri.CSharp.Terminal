@@ -3,11 +3,14 @@
 namespace TableProject
 {
 	class MainClass
+
 	{
+		
 		enum ti {ime=0, familia, godini};
 
 		public static void Main (string[] args)
 		{
+			
 
 			//Дефиниране таблица
 			string[,] table = new string[2, 3];
@@ -48,3 +51,6 @@ namespace TableProject
 	//
 	//			string list1 = string.Join (";", parse);
 	//			Console.WriteLine ("\n\nНовият стринг е:\n" + list1 + "\n\n");
+
+//Console.OutputEncoding = GetEncoding(28595);
+//Console.WriteLine("Здравей, Краси!");

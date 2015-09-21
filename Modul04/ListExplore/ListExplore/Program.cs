@@ -36,25 +36,29 @@ namespace ListExplore
 				}
 
 				//Преглед на List
-				if (_userinput.ToLower ().Contains ("show")) {
+				if (_userinput.ToLower ().Contains ("show")) 
+				{
 					Console.Write (" Списък: ");
 
-					foreach (int value in _list) {
-						Console.Write (value.ToString () + ", ");
+					for (int i = 0; i < _list.Count; i++ )
+					{
+						Console.Write ( _list[i] );
+						if ( i != _list.Count - 1) Console.Write ( ", ");
 					}
 
 					Console.WriteLine ("\n");
-				}
-				//Размер на List
-				if (_userinput.ToLower ().Contains ("size")) {
-					Console.WriteLine ("размер на списъка: " + _list.Count.ToString () + "\n");
-				} 
 
-			} while(_userinput != "exit");
+				//Размер на List
+				if (_userinput.ToLower ().Contains ("size")) 
+			{
+					Console.WriteLine ("размер на списъка: " + _list.Count.ToString () + "\n");
+			} 
+
+				} 
+			}while(_userinput != "exit");
 		}
 	}
 }
-
 
 	
 

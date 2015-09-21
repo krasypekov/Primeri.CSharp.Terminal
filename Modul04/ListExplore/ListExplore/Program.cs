@@ -15,7 +15,7 @@ namespace ListExplore
 			_list.Add (3);
 			_list.Add (9);
 
-			//Потребителски ход
+			//Потребителски вход
 			do {
 				Console.Write ( "? ");
 				_userinput = Console.ReadLine ();
@@ -26,7 +26,7 @@ namespace ListExplore
 				//Преглед на List
 				if ( _userinput.Contains ("show"))
 				{
-					Console.Write (" _list: ");
+					Console.Write (" Списък: ");
 
 					for (int i=0; i < _list.Count; i++ )
 			    	{
@@ -35,7 +35,7 @@ namespace ListExplore
 						if ( i != _list.Count - 1 ) Console.Write ( ", ");
 					}
 
-					Console.WriteLine ( );
+					Console.WriteLine ("\n" );
 				}
 				//Размер на List
 					} while ( _userinput != "exit");

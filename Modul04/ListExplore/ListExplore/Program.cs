@@ -43,11 +43,9 @@ namespace ListExplore
 				{
 					Console.Write (" Списък: ");
 
-					for (int i=0; i < _list.Count; i++ )
-			    	{
-						
-						Console.Write ( _list [i] );
-						if ( i != _list.Count - 1 ) Console.Write ( ", ");
+					foreach (int value in _list)
+					{
+						Console.Write ( value.ToString () + ", ");
 					}
 
 					Console.WriteLine ("\n" );
@@ -56,11 +54,14 @@ namespace ListExplore
 				if ( _userinput.ToLower().Contains ("size") )
 				{
 					Console.WriteLine ("размер на списъка: " + _list.Count.ToString ( ) + "\n");
-				} while(_userinput !="exit");
-			}
-		}
+				} 
+
+			
+			}while(_userinput != "exit");
 	}
 }
+}
+
 	
 
 

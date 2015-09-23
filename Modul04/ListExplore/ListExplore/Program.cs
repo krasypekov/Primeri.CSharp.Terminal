@@ -49,10 +49,10 @@ namespace ListExplore
 					Console.WriteLine ("\n");
 
 				//Размер на List
-				if (_userinput.ToLower ().Contains ("size")) 
-			{
-					Console.WriteLine ("размер на списъка: " + _list.Count.ToString () + "\n");
-			} 
+						if ( _userinput.ToLower().Contains ("size")) 
+					{
+							Console.WriteLine ("размер на списъка: " + _list.Count.ToString () + "\n");
+					} 
 
 				} 
 			}while(_userinput != "exit");

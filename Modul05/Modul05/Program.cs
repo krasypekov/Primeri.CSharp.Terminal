@@ -39,8 +39,9 @@ namespace Modul05
 		{
 			int _temp = 0;
 			if ( int.TryParse (_input.Split (' ') [1], out _temp)) 
-			{
-				_temp = _temp* _temp * _temp;
+			{ 
+				_temp = _temp * _temp * _temp;
+
 			}
 			return _temp;
 		}
